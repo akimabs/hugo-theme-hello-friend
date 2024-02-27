@@ -3,10 +3,8 @@
     {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">{{ $.Site.Copyright | safeHTML }}</div>
       {{ else }}
-      {{ partial "logo.html" . }}
       <div class="copyright">
-        <span>© {{ now.Year }} Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
-        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+        <span>© {{ now.Year }} Akimabs </span>
       </div>
     {{ end }}
   </div>
@@ -19,3 +17,4 @@
 <script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
 
 {{- partial "extended_footer.html" . }}
+
