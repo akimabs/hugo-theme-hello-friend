@@ -1,4 +1,4 @@
-<figure class="post-cover">
+<figure class="post-cover cover-width">
   {{ if .Params.UseRelativeCover }}
     <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" alt="{{ .Params.CoverAlt | plainify | default .Title }}"/>
   {{ else }}

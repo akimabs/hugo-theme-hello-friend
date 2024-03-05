@@ -30,6 +30,7 @@ body {
 
 p {
   font-weight: 300;
+  text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,14 +43,17 @@ h1 {
 
 h2 {
   font-size: 1.625rem;
+  text-align: justify;
 }
 
 h3 {
   font-size: 1.375rem;
+  text-align: justify;
 }
 
 h4 {
   font-size: 1.125rem;
+  text-align: justify;
 }
 
 @media ($phone) {
@@ -76,7 +80,18 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: auto;
+  max-width: 760px;
+
+  @media ($tablet) {
+    width: auto;
+    max-width: 620px;
+  }
+
+  @media ($phone) {
+    width: auto;
+    max-width: 330px;
+  }
 
   &.left {
     margin-right: auto;
@@ -244,6 +259,8 @@ ol ol {
   margin: 50px 0;
 
   @media ($phone) {
+    width: auto;
+    max-width: 370px;
     margin-top: 0;
   }
 }
