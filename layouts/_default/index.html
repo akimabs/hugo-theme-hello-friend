@@ -70,7 +70,7 @@
           {{ . | markdownify }}
         {{ else }}
           {{ if .Truncated }}
-            {{ .Summary }}
+            <p>{{ .Summary }}</p>
           {{ end }}
         {{ end }}
       </div>
